@@ -121,7 +121,12 @@ export const Pricing = () => {
                                     )}
                                 </div>
                                 <div className="flex items-baseline gap-1 mt-[30px]">
-                                    <span className="text-4xl font-bold tracking-tighter leading-none">
+                                    <span
+                                        className={twMerge(
+                                            "text-4xl font-bold tracking-tighter leading-none text-black",
+                                            popular === true && "text-white"
+                                        )}
+                                    >
                                         {monthlyPrice}
                                     </span>
                                     <span
