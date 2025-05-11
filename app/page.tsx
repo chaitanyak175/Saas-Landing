@@ -38,6 +38,8 @@ export default function Home() {
             cancelAnimationFrame(animationId);
         };
     }, []);
+
+    if (!mounted) return null;
     return (
         <React.Fragment>
             <Header />
