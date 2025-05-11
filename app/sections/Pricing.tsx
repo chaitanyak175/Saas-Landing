@@ -125,7 +125,12 @@ export const Pricing = () => {
                                     <span className="text-4xl font-bold tracking-tighter leading-none">
                                         {monthlyPrice}
                                     </span>
-                                    <span className="tracking-tight font-bold text-black/50">
+                                    <span
+                                        className={twMerge(
+                                            "tracking-tight font-bold text-black/50",
+                                            popular === true && "text-white/50"
+                                        )}
+                                    >
                                         /month
                                     </span>
                                 </div>
@@ -142,14 +147,22 @@ export const Pricing = () => {
                                     {features.map((feature, index) => (
                                         <li
                                             key={index}
-                                            className="text-sm flex items-center gap-4 "
+                                            className="text-sm flex items-center gap-4"
                                         >
                                             <Image
                                                 src={CheckIcon}
                                                 alt="Check Icon"
                                                 className="h-6 w-6"
                                             />
-                                            <span>{feature}</span>
+                                            <span
+                                                className={twMerge(
+                                                    "text-black",
+                                                    popular === true &&
+                                                        "text-white"
+                                                )}
+                                            >
+                                                {feature}
+                                            </span>
                                         </li>
                                     ))}
                                 </ul>
