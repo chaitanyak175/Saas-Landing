@@ -1,6 +1,6 @@
 "use client";
 
-import CheckIconTsx from "@/app/assets/check";
+import CheckIconTsx from "@/app/components/check";
 
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
