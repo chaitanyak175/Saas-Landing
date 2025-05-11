@@ -2,6 +2,8 @@
 
 import CheckIcon from "@/app/assets/check.svg";
 
+import CheckIconTsx from "@/app/assets/check";
+
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -149,10 +151,12 @@ export const Pricing = () => {
                                             key={index}
                                             className="text-sm flex items-center gap-4"
                                         >
-                                            <Image
-                                                src={CheckIcon}
-                                                alt="Check Icon"
-                                                className="h-6 w-6"
+                                            <CheckIconTsx
+                                                className={twMerge(
+                                                    "h-6 w-6 text-black",
+                                                    popular === true &&
+                                                        "text-white"
+                                                )}
                                             />
                                             <span
                                                 className={twMerge(
