@@ -1,3 +1,5 @@
+"use client";
+
 import Logo from "@/app/assets/logosaas.png";
 import SocialX from "@/app/assets/social-x.svg";
 import SocialInstagram from "@/app/assets/social-insta.svg";
@@ -6,6 +8,7 @@ import SocialPin from "@/app/assets/social-pin.svg";
 import SocialYoutube from "@/app/assets/social-youtube.svg";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const Footer = () => {
     return (
