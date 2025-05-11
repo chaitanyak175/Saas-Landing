@@ -8,7 +8,6 @@ import SocialPin from "@/app/assets/social-pin.svg";
 import SocialYoutube from "@/app/assets/social-youtube.svg";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export const Footer = () => {
     return (
@@ -71,7 +70,8 @@ export const Footer = () => {
                     />
                 </div>
                 <p className="mt-6">
-                    &copy; 2025 Chaitanya's Company Inc. All Rights Reserved.
+                    &copy; 2025 Chaitanya&apos;s Company Inc. All Rights
+                    Reserved.
                 </p>
             </div>
         </footer>
