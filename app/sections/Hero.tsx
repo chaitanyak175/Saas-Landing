@@ -45,19 +45,41 @@ export const Hero = () => {
                             efforts, and celebrate your successes.
                         </p>
                         <div className="flex gap-1 items-center mt-[30px]">
-                            <button className="btn btn-primary">
+                            <motion.button
+                                whileHover={{
+                                    translateY: -4,
+                                }}
+                                transition={{
+                                    duration: 0.15,
+                                }}
+                                className="btn btn-primary hover:bg-black/75"
+                            >
                                 Get for free
-                            </button>
-                            <button className="btn btn-text gap-1">
+                            </motion.button>
+                            <motion.button
+                                whileHover="hover"
+                                initial="initial"
+                                variants={{}}
+                                className="btn btn-text gap-1"
+                            >
                                 <span>Learn more</span>
-                                <Image
-                                    src={ArrowRight}
+                                <motion.img
+                                    src={ArrowRight.src}
                                     alt="Right Arrow"
                                     className="h-5 w-5"
                                     width={16}
                                     height={16}
+                                    variants={{
+                                        initial: { x: 0 },
+                                        hover: { x: 10 },
+                                    }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 1000,
+                                        damping: 15,
+                                    }}
                                 />
-                            </button>
+                            </motion.button>
                         </div>
                     </div>
                     <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">

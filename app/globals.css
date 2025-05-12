@@ -38,7 +38,7 @@ body {
 }
 
 @utility btn {
-    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight cursor-pointer;
 }
 
 @utility btn-primary {
